@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "pm2": "pm2 start processes.json --no-daemon",
+    "pm2": "pm2-runtime start processes.json ",
     "start": "node ./bin/www",
     "test": "jest",
     "migrate": "node ./bin/migrate.js"
   },
   "dependencies": {
+    "@pm2/pm2-version-check": "^1.0.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
