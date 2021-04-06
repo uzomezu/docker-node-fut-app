@@ -6,5 +6,5 @@ COPY fut-players/ .
 RUN npm install
 RUN chown -R app /opt/app
 USER app
-EXPOSE 3000
+EXPOSE 5000
 CMD ["npm", "run", "pm2"]
