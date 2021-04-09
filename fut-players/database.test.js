@@ -12,7 +12,7 @@ test('create Player', async ()=>{
         firstName: "Luka",
         lastName: "Modric",
         position: "CAM",
-        squadNumber: "10",
+        squadNumber: 10,
     });
     expect(Player.id).toEqual(1);
 });
@@ -23,7 +23,7 @@ test('get player', async ()=>{
     expect(player.firstName).toEqual('Luka');
     expect(player.lastName).toEqual("Modric");
     expect(player.position).toEqual("CAM");
-    expect(player.squadNumber).toEqual("10");
+    expect(player.squadNumber).toEqual(10);
     
 });
 

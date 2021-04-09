@@ -24,8 +24,8 @@ const Player = sequelize.define("Player", {
         allowNull: false
     },
     squadNumber: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.INTEGER,
+        allowNull: true
     }
 });
 
